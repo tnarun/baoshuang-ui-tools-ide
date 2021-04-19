@@ -1,3 +1,4 @@
+import ItemManager from '@/components/ItemManager';
 import VideoPlayer from '@/components/VideoPlayer';
 import React from 'react';
 import styles from './index.less';
@@ -32,6 +33,7 @@ export default class IndexPage extends React.Component<IProps, IState> {
         {this.state.videoPath == '' ? null : (
           <VideoPlayer videoPath={this.state.videoPath} />
         )}
+        <ItemManager />
       </div>
     );
   }
